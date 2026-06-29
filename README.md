@@ -125,12 +125,6 @@ This repository does not contain protected health information, identifiable pati
 
 Users must obtain access to the original datasets through the appropriate data providers and comply with all applicable data use agreements.
 
-## Intended Use
-
-This repository is intended for academic research on medical image preprocessing, classification, segmentation, model evaluation, and edge-AI-oriented medical imaging model development.
-
-It is not intended for clinical diagnosis or real-world clinical deployment.
-
 ## License
 
 For academic and research use only.
