@@ -117,10 +117,15 @@ Final evaluation includes test-set performance evaluation, efficiency profiling,
 - Peak GPU memory
 - Number of parameters
 
-## Data Availability
+## File Structure
 
-Raw medical imaging data are not included in this repository.
 
-## License
-
-For academic and research use only.
+```text
+.
+├── model_loader.py          # Model loading utilities
+├── intensity.py             # Intensity normalization preprocessing experiments
+├── resolution.py            # Image resolution preprocessing experiments
+├── augmentation.py          # Data augmentation preprocessing experiments
+├── frequency.py             # Frequency-domain preprocessing experiments
+├── train.py                 # Main training pipeline
+└── evaluation_metrics.py    # Metric calculation and model performance evaluation
