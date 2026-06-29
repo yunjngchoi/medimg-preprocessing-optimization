@@ -21,19 +21,27 @@ This project includes:
 
 ## Datasets
 
+This project uses two 2D chest X-ray datasets and one 3D abdominal trauma CT dataset.
+
 ### 2D Chest X-ray Datasets
 
 #### VinDr-CXR
 
 VinDr-CXR is used for 2D chest X-ray classification and segmentation experiments.
 
-The dataset contains DICOM chest X-ray images with multi-label abnormality annotations and normal cases.
+It contains DICOM chest radiographs with multi-label abnormality annotations, including 14 abnormal findings and normal cases.
+
+For classification, VinDr-CXR is used for multi-label chest abnormality prediction.  
+For segmentation, it can be used with available lesion annotations, anatomical masks, or generated segmentation masks depending on the experiment setting.
 
 #### NIH Chest X-ray 14
 
 NIH Chest X-ray 14, also referred to as CXR-14, is used as an additional 2D chest X-ray dataset.
 
-It contains frontal chest radiographs with multi-label pathology annotations.
+It contains frontal chest radiographs with image-level multi-label thoracic disease annotations.
+
+For classification, CXR-14 is used for multi-label thoracic disease prediction.  
+For segmentation, it can be paired with anatomical masks, externally derived masks, or pretrained model-generated masks.
 
 ### 3D CT Dataset
 
@@ -41,9 +49,12 @@ It contains frontal chest radiographs with multi-label pathology annotations.
 
 RSNA Abdominal Trauma CT is used for 3D abdominal trauma CT classification and segmentation experiments.
 
-The dataset contains abdominal CT scans with patient-level, injury-level, and organ-level labels.
+It contains abdominal CT volumes from trauma patients with patient-level, injury-level, and organ-level labels.
 
-Segmentation masks include abdominal organs such as the liver, spleen, kidneys, and bowel.
+For classification, the dataset is used to predict trauma-related injury targets such as bowel injury, active extravasation, and solid-organ injury grades.  
+For segmentation, the dataset includes abdominal organ masks such as liver, spleen, kidneys, and bowel.
+
+Because CT volumes have variable resolution and anisotropic voxel spacing, CT preprocessing includes HU windowing, voxel resampling, and 3D patch-size optimization.
 
 ## Preprocessing Search Space
 
