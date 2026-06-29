@@ -128,4 +128,5 @@ Final evaluation includes test-set performance evaluation, efficiency profiling,
 ├── augmentation.py          # Data augmentation preprocessing experiments
 ├── frequency.py             # Frequency-domain preprocessing experiments
 ├── train.py                 # Main training pipeline
-└── evaluation_metrics.py    # Metric calculation and model performance evaluation
+├── evaluation_metrics.py    # Metric calculation and model performance evaluation
+└── README.md             # Project overview and usage instructions
