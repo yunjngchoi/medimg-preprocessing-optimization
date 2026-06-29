@@ -121,10 +121,6 @@ Final evaluation includes test-set performance evaluation, efficiency profiling,
 
 Raw medical imaging data are not included in this repository.
 
-This repository does not contain protected health information, identifiable patient data, raw DICOM files, raw CT volumes, or institution-specific identifiers.
-
-Users must obtain access to the original datasets through the appropriate data providers and comply with all applicable data use agreements.
-
 ## License
 
 For academic and research use only.
